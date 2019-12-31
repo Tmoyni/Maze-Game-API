@@ -7,27 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-puts "destroying your scores"
-Score.destroy_all
+# puts "destroying your scores"
+# Score.destroy_all
 
-scores = [
-    {
-        id: 1, 
-        player: "Dan",
-        score: 50,
-    },
-    {
-        id: 2, 
-        player: "Sam",
-        score: 60
-    },
-    {
-        id: 3, 
-        player: "Bland",
-        score: 100
-    }
-]
+# scores = [
+#     {
+#         id: 1, 
+#         player: "Dan",
+#         score: 50,
+#     },
+#     {
+#         id: 2, 
+#         player: "Sam",
+#         score: 60
+#     },
+#     {
+#         id: 3, 
+#         player: "Bland",
+#         score: 100
+#     }
+# ]
 
-scores.each do |score|
-    Score.create(score)
-end
+# scores.each do |score|
+#     Score.create(score)
+# end
+
+Maze.create({
+    level: 1,
+    file: "simplemaze.png"
+})
