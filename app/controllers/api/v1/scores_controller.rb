@@ -19,5 +19,5 @@ end
 
 def player_params
     # whitelist params
-    params.permit(:player, :score, :id)
+    params.permit(:player, :score, :level, :id)
 end

@@ -8,31 +8,40 @@
 
 
 # puts "destroying your scores"
-# Score.destroy_all
+Score.destroy_all
 
-# scores = [
-#     {
-#         id: 1, 
-#         player: "Dan",
-#         score: 50,
-#     },
-#     {
-#         id: 2, 
-#         player: "Sam",
-#         score: 60
-#     },
-#     {
-#         id: 3, 
-#         player: "Bland",
-#         score: 100
-#     }
-# ]
+scores = [
+    {
+        id: 1, 
+        player: "Dan",
+        score: 50.09,
+        level: 1
 
-# scores.each do |score|
-#     Score.create(score)
-# end
+    },
+    {
+        id: 2, 
+        player: "Sam",
+        score: 60.90,
+        level: 1
+    },
+    {
+        id: 3, 
+        player: "Bland",
+        score: 100.80,
+        level: 2
+    }
+]
 
-Maze.create({
-    level: 1,
-    file: "simplemaze.png"
-})
+scores.each do |score|
+    Score.create(score)
+end
+
+# Maze.create({
+#     level: 1,
+#     file: "https://i.imgur.com/4FH1YHc.png"
+# })
+
+# Maze.create({
+#     level: 2,
+#     file: "https://i.imgur.com/y3ITXIb.png"
+# })
